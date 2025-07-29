@@ -39,7 +39,7 @@ This project includes responsive media queries to ensure an optimal experience a
 
 ## 🚀 Live Preview
 
-🔗 [Click here to view the live project](https://seu-portfolio-link.com)
+🔗 [Click here to view the live project](https://david-hrbarbosa.github.io/Projeto-Jujutsu-Kaisen-Responsividade/)
 
 ---
 
