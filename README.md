@@ -1,6 +1,6 @@
 # 🧠 Jujutsu Kaisen - Gojo's School Website
 
-![Jujutsu Kaisen Banner](assets/jujutsukaisenlogo3.png)
+![Jujutsu Kaisen Banner](assets/jujutsu-kaisen-logo3.png)
 
 ## 📌 Project Name
 **Jujutsu Kaisen - Gojo's School Website**
