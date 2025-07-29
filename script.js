@@ -1,4 +1,4 @@
-const form = document.querySelector(".formulario-fale-conosco")
+       const form = document.querySelector(".formulario-fale-conosco")
         const mascara = document.querySelector(".mascaraformulario")
 
         function mostrarformulario() {

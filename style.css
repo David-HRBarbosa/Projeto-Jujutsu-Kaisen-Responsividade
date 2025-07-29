@@ -1,192 +1,212 @@
+/* Reset e base */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0a0c10;
-    color: #000000;
-    overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #0a0c10;
+  color: #ffffff;
+  overflow-x: hidden;
 }
 
-.jujutsu-logo {
-    max-width: 50%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-button {
-    color: #ffffff;
-    background-color: #c51111;
-    border-radius: 5px;
-    border: none;
-    padding: 15px 25px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: background 0.3s;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #ff1f1f;
-}
-
-.logo-jujutsu2 {
-    max-width: 100%;
-    height: auto;
-    margin: 20px auto;
-    display: block;
-}
-
-.caixa-principal {
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-}
-
-.caixa-mae {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
-    gap: 40px;
-    text-align: center;
-    min-height: 100vh;
-}
-
-.caixa-video video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -2;
-}
-
-.mascara {
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
-    z-index: -1;
-}
-
+/* Header */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: sticky;
-    top: 0;
-    z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .header img {
-    height: 100px;
+  height: 100px;
 }
 
 .header a {
-    color: #ffffff;
-    font-size: 18px;
-    text-decoration: none;
-    transition: color 0.3s, font-size 0.3s;
-    cursor: pointer;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s, font-size 0.3s;
+  cursor: pointer;
 }
 
 .header a:hover {
-    color: #c51111;
-    font-size: 24px;
+  color: #c51111;
+  font-size: 24px;
 }
 
-.link-whatsapp img {
-    height: 60px;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 100;
+/* Seções principais */
+section {
+  padding: 100px 20px 60px;
+  scroll-margin-top: 120px; /* Resolve sobreposição com header */
+  text-align: center;
 }
 
+#home, #energia, #gojo {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Conteúdo e imagens */
+.jujutsu-logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.logo-jujutsu2 {
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Botões */
+button {
+  color: #ffffff;
+  background-color: #c51111;
+  border-radius: 5px;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #ff1f1f;
+}
+
+/* Caixa principal */
+.caixa-mae {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  gap: 40px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.caixa-principal {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+/* Vídeo de fundo */
+.caixa-video video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.mascara {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+  z-index: -1;
+}
+
+/* Formulário */
 .formulario-fale-conosco {
-    background-color: #ffffff;
-    color: #000000;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    position: fixed;
-    top: 50%;
-    left: -300px;
-    transform: translateY(-50%);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    transition: left 0.5s ease-in-out;
-    z-index: 20;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: fixed;
+  top: 30%;
+  left: -300px;
+  transform: translateY(-50%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: left 0.5s ease-in-out;
+  z-index: 20;
 }
 
 input,
 textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
-    outline-color: #18d80f;
-    font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  outline-color: #18d80f;
+  font-size: 16px;
 }
 
 textarea {
-    resize: none;
-    height: 100px;
+  resize: none;
+  height: 100px;
 }
 
+/* Máscara formulário */
 .mascaraformulario {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
-    visibility: hidden;
-    z-index: 15;
-    transition: visibility 0.5s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  z-index: 15;
+  transition: visibility 0.5s ease-in-out;
 }
 
+/* Parágrafos */
 p {
-    color: #ffffff;
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 10px 0;
-    text-align: justify;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px 0;
+  text-align: justify;
 }
 
+/* WhatsApp fixo */
+.link-whatsapp img {
+  height: 60px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
-    .caixa-mae {
-        flex-direction: column;
-        padding: 20px;
-    }
+  .caixa-mae {
+    flex-direction: column;
+    padding: 20px;
+  }
 
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .header img {
-        display: none;
-    }
+  .header img {
+    display: none;
+  }
 
-    .formulario-fale-conosco {
-        width: 90vw;
-    }
+  .formulario-fale-conosco {
+    width: 90vw;
+  }
 }
-
-

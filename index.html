@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jujutsu Kaisen - Escola Satoru Gojo</title>
   <link rel="stylesheet" href="style.css">
+  <title>Jujutsu Kaisen</title>
 </head>
 
 <body>
+  <div class="mascaraformulario" onclick="esconderformulario()"></div>
+
   <header class="header">
-    <img src="img jujutsu/jujutsu kaisen logo 3.png" alt="logo-jujutsu">
+    <img src="assets/jujutsu kaisen logo 3.png" alt="logo-jujutsu">
     <nav>
       <a href="#home">Home</a>
       <a href="#energia">Energias Amaldiçoadas</a>
@@ -19,40 +21,51 @@
   </header>
 
   <main>
-    <section id="home" class="section">
+    <section id="home" class="section-content">
+      <h2>Bem-vindo à Escola Jujutsu!</h2>
+      <p>Aqui você aprende a combater maldições com Satoru Gojo e seus aliados.</p>
+    </section>
+
+    <section id="energia" class="section-content">
+      <h2>Energias Amaldiçoadas</h2>
+      <p>As energias amaldiçoadas são forças negativas formadas a partir de emoções humanas.</p>
+    </section>
+
+    <section class="caixa-mae">
       <div class="caixa-principal">
-        <img src="/img jujutsu/jujutsu kaisen logo.jpg" alt="logo satoru Gojo" class="jujutsu-logo">
+        <img src="assets/jujutsu kaisen logo.jpg" alt="logo satoru Gojo" class="jujutsu-logo">
         <p>Escola de maldições do Satoru Gojo!</p>
-        <p>Jujutsu Kaisen segue a história de Yuji Itadori, um adolescente com habilidades físicas extraordinárias...</p>
-        <button onclick="mostrarformulario()">Se inscreva na escola!</button>
+        <p>Jujutsu Kaisen segue a história de Yuji Itadori, um adolescente com habilidades físicas extraordinárias. Após engolir um dos dedos de Ryomen Sukuna, um temido monstro, Yuji se vê preso em um mundo de feitiçaria. Ele é levado para a escola Jujutsu, onde aprende a lutar contra maldições, seres malignos que afligem o mundo.</p>
+        <button onclick="mostrarformulario()">Se inscreva na escola Satoru Gojo!</button>
+      </div>
+
+      <div>
+        <img src="assets/jujutsu kaisen logo 2.jpg" alt="logo jujutsu" class="logo-jujutsu2">
       </div>
     </section>
 
-    <section id="energia" class="section">
-      <h2>Energias Amaldiçoadas</h2>
-      <p>As energias amaldiçoadas são forças negativas geradas pelas emoções humanas...</p>
-    </section>
-
-    <section id="gojo" class="section">
+    <section id="gojo" class="section-content">
       <h2>Satoru Gojo</h2>
-      <p>O feiticeiro mais poderoso da atualidade, com o Seis Olhos e a Técnica do Infinito...</p>
+      <p>O feiticeiro mais forte do mundo Jujutsu, mestre de técnicas como o Infinito e o Seis Olhos.</p>
     </section>
+
+    <section class="caixa-video">
+      <video src="assets/WhatsApp Video 2025-02-05 at 09.20.01.mp4" autoplay muted loop></video>
+      <div class="mascara" onclick="esconderformulario()"></div>
+    </section>
+
+    <a href="https://api.whatsapp.com/send?phone=5569993651536&text=Ol%C3%A1,%20quero%20fazer%20parte%20da%20escola%20Satoru%20Gojo!" class="link-whatsapp">
+      <img src="assets/whatsapp.png" alt="link para o whatsapp">
+    </a>
+
+    <form class="formulario-fale-conosco" action="https://formcarry.com/s/UcYtG6PXvKM" method="post" enctype="multipart/form-data">
+      <input placeholder="Seu nome" type="text" name="nome">
+      <input placeholder="Seu telefone" type="tel" name="telefone">
+      <input placeholder="Seu email" type="email" name="email">
+      <textarea placeholder="Digite sua prefêrencia de professor aqui..." name="duvidas"></textarea>
+      <button type="submit">Enviar Candidatura</button>
+    </form>
   </main>
-
-  <div class="caixa-video">
-    <video src="/img jujutsu/WhatsApp Video 2025-02-05 at 09.20.01.mp4" autoplay muted loop></video>
-    <div class="mascara"></div>
-  </div>
-
-  <form class="formulario-fale-conosco" action="https://formcarry.com/s/UcYtG6PXvKM" method="post">
-    <input placeholder="Seu nome" type="text" name="nome">
-    <input placeholder="Seu telefone" type="tel" name="telefone">
-    <input placeholder="Seu email" type="email" name="email">
-    <textarea placeholder="Digite sua mensagem..." name="mensagem"></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-
-  <div class="mascaraformulario" onclick="esconderformulario()"></div>
 
   <script src="script.js"></script>
 </body>
