@@ -1,6 +1,6 @@
 # 🧠 Jujutsu Kaisen - Gojo's School Website
 
-![Jujutsu Kaisen Banner](assets/https://github.com/David-HRBarbosa/Projeto-Jujutsu-Kaisen-Responsividade/blob/main/assets/jujutsu%20kaisen%20logo%203.png)
+![Jujutsu Kaisen Banner](assets/)
 
 ## 📌 Project Name
 **Jujutsu Kaisen - Gojo's School Website**
