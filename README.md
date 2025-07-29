@@ -1,7 +1,5 @@
 # 🧠 Jujutsu Kaisen - Gojo's School Website
 
-![Jujutsu Kaisen Banner](assets/jujutsukaisenlogo.jpg)
-
 ## 📌 Project Name
 **Jujutsu Kaisen - Gojo's School Website**
 
@@ -66,13 +64,8 @@ This project includes responsive media queries to ensure an optimal experience a
 ## 👤 Author
 
 **David Barbosa**  
-💼 [LinkedIn](https://www.linkedin.com/in/seu-usuario) |  
-🌐 [My Portfolio](https://seu-portfolio-link.com) |  
+💼 [LinkedIn](https://www.linkedin.com/in/david-henrique-rodrigues/) |  
+🌐 [My Portfolio](https://david-hrbarbosa.github.io/Portfolio/) |  
 📧 david.hrbarbosa159@gmail.com
 
 ---
-
-## 📸 Preview
-
-![Preview 1](https://via.placeholder.com/600x350.png?text=Homepage+Preview)  
-![Preview 2](https://via.placeholder.com/600x350.png?text=Mobile+View)
